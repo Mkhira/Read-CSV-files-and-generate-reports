@@ -5,7 +5,7 @@ List<FileData> fileDataFromJson(String str) => List<FileData>.from(json.decode(s
 String fileDataToJson(List<FileData> data) => json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class FileData {
-  int? id;
+  dynamic id;
   String? name;
   String? area;
   int? amount;
